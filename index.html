@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Jebbari - Software Developer</title>
+    <meta name="description" content="Mohammed Jebbari - Passionate Software Developer specializing in Rust, Go, and JavaScript. Portfolio showcasing 24+ projects and 500+ commits.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Mohammed Jebbari</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Mohammed Jebbari</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Developer & Programming Enthusiast</h2>
+                <p class="hero-description">
+                    Passionate about creating efficient, elegant solutions to complex problems through code.
+                    Specializing in <strong>Rust</strong>, <strong>Go</strong>, and <strong>JavaScript</strong>.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Commits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">main.rs</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">fn</span> <span class="function">main</span>() {
+    <span class="keyword">let</span> developer = <span class="string">"Mohammed Jebbari"</span>;
+    <span class="keyword">let</span> passion = <span class="string">"Creating elegant solutions"</span>;
+    
+    <span class="function">println!</span>(<span class="string">"Hello, World! I'm {}"</span>, developer);
+    <span class="function">build_amazing_projects</span>();
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated software developer with extensive hands-on experience in multiple programming languages. 
+                        Currently completing an intensive programming bootcamp at <strong>Zone01 Oujda</strong>, where I've tackled 
+                        300+ programming challenges and built comprehensive projects across multiple technologies.
+                    </p>
+                    <p>
+                        My journey in programming has taken me through the depths of systems programming with Rust, 
+                        backend development with Go, and full-stack web development with JavaScript. I believe in 
+                        writing clean, efficient code and constantly learning new technologies.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>300+ Programming Challenges Completed</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>24 Public Repositories on GitHub</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Zone01 Oujda Bootcamp Graduate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-info">
+                            <h3>Mohammed Jebbari</h3>
+                            <p>Software Developer</p>
+                            <div class="profile-stats">
+                                <div class="profile-stat">
+                                    <span class="stat-value">2+</span>
+                                    <span class="stat-text">Years Experience</span>
+                                </div>
+                                <div class="profile-stat">
+                                    <span class="stat-value">3</span>
+                                    <span class="stat-text">Main Languages</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fab fa-rust"></i>
+                        Systems Programming
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Rust</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Memory Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Concurrent Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fab fa-golang"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Go</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WebSocket</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fab fa-js-square"></i>
+                        Full-Stack Web
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GraphQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Performance Optimization</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rust">Rust</button>
+                <button class="filter-btn" data-filter="go">Go</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Rust Projects -->
+                <div class="project-card" data-category="rust">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/piscine-rust" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Piscine Rust</h3>
+                        <p class="project-description">
+                            Comprehensive bootcamp covering 75+ Rust programming challenges focusing on memory safety, 
+                            performance optimization, and systems programming concepts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Rust</span>
+                            <span class="tech-tag">Systems Programming</span>
+                            <span class="tech-tag">Memory Safety</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="rust">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/road_intersection" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Road Intersection Simulator</h3>
+                        <p class="project-description">
+                            Complex traffic management system with concurrent processing, implementing advanced 
+                            algorithms for traffic flow optimization and collision detection.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Rust</span>
+                            <span class="tech-tag">Concurrency</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Go Projects -->
+                <div class="project-card" data-category="go">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/groupie" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Groupie Tracker</h3>
+                        <p class="project-description">
+                            Music artist tracking system with advanced filtering and search capabilities. 
+                            Features real-time data processing and responsive web interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="go">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/real-time-forum" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-time Forum</h3>
+                        <p class="project-description">
+                            Live discussion platform with WebSocket integration for real-time messaging, 
+                            user authentication, and message persistence.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Projects -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/piscine-js" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Piscine JavaScript</h3>
+                        <p class="project-description">
+                            226+ JavaScript challenges covering frontend and backend development, 
+                            including DOM manipulation, async programming, and modern ES6+ features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Frontend</span>
+                            <span class="tech-tag">Backend</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jebbari-mohammed/mini-framework" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mini Framework</h3>
+                        <p class="project-description">
+                            Custom JavaScript framework development with component-based architecture, 
+                            state management, and virtual DOM implementation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Framework</span>
+                            <span class="tech-tag">Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/jebbari-mohammed" class="btn btn-primary" target="_blank">
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always interested in new opportunities and collaborations. 
+                        Whether you want to discuss a project, job opportunity, or just say hello, 
+                        feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:jebbari.mohammed24@ump.ac.ma" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>jebbari.mohammed24@ump.ac.ma</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammed-jebbari-6908501b5/" class="contact-method" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/jebbari-mohammed" class="contact-method" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xovaabqk" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Mohammed Jebbari. All rights reserved.</p>
+                    <p>Passionate about creating efficient, elegant solutions to complex problems through code.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/jebbari-mohammed" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammed-jebbari-6908501b5/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:jebbari.mohammed24@ump.ac.ma">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

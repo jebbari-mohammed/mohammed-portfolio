@@ -426,28 +426,71 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .project-card {
-    background: white;
-    border-radius: 12px;
+    background: var(--card-bg);
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.1);
 }
 
 .project-image {
-    height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+/* Project image backgrounds with language-specific colors */
+.project-card[data-category="rust"] .project-image {
+    background: linear-gradient(135deg, #ce422b, #f74c00);
+}
+
+.project-card[data-category="go"] .project-image {
+    background: linear-gradient(135deg, #00add8, #007d9c);
+}
+
+.project-card[data-category="javascript"] .project-image {
+    background: linear-gradient(135deg, #323330, #1a1a1a);
+}
+
+.tech-icon {
+    font-size: 4rem;
+    color: white;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Language-specific icon colors */
+.project-card[data-category="rust"] .tech-icon {
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(206, 66, 43, 0.6);
+}
+
+.project-card[data-category="go"] .tech-icon {
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 173, 216, 0.6);
+}
+
+.project-card[data-category="javascript"] .tech-icon {
+    color: #f7df1e;
+    text-shadow: 0 2px 20px rgba(247, 223, 30, 0.8);
+}
+
+.tech-icon i {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-overlay {
@@ -468,10 +511,20 @@ body {
     opacity: 1;
 }
 
+.project-card:hover .tech-icon {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
 .project-link {
     color: white;
     font-size: 2rem;
+    transition: transform 0.3s ease;
     text-decoration: none;
+}
+
+.project-link:hover {
+    transform: scale(1.2);
 }
 
 .project-content {

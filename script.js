@@ -187,6 +187,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update active nav link on scroll
     window.addEventListener('scroll', updateActiveNavLink);
     updateActiveNavLink(); // Call once to set initial state
+    
+    // Profile image click to LinkedIn
+    const profileImage = document.querySelector('.profile-image');
+    if (profileImage) {
+        profileImage.style.cursor = 'pointer';
+        profileImage.addEventListener('click', () => {
+            window.open('https://www.linkedin.com/in/mohammed-jebbari-6908501b5/', '_blank');
+        });
+    }
 });
 
 // Add some easter eggs for fun

@@ -121,7 +121,7 @@ const PROJECTS: Project[] = [
     filterTag: "mobile",
     title: "IZEM — Autonomous AI Fitness Coach",
     src: "/assets/projects-screenshots/izem/landing.png",
-    screenshots: ["landing.png", "coach.png", "meals.png"],
+    screenshots: ["landing.png", "voice.png", "coach.png", "meals.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.reactNative,
@@ -175,6 +175,7 @@ const PROJECTS: Project[] = [
           <SlideShow
             images={[
               `${BASE_PATH}/izem/landing.png`,
+              `${BASE_PATH}/izem/voice.png`,
               `${BASE_PATH}/izem/coach.png`,
               `${BASE_PATH}/izem/meals.png`,
             ]}
@@ -189,7 +190,7 @@ const PROJECTS: Project[] = [
     filterTag: "mobile",
     title: "Madrasty (مدرستي) — EdTech & School Platform",
     src: "/assets/projects-screenshots/madrasty/landing.png",
-    screenshots: ["landing.png", "dashboard.png"],
+    screenshots: ["landing.png", "offline-sync.png", "cloud-tasks.png", "dashboard.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.reactNative,
@@ -243,6 +244,8 @@ const PROJECTS: Project[] = [
           <SlideShow
             images={[
               `${BASE_PATH}/madrasty/landing.png`,
+              `${BASE_PATH}/madrasty/offline-sync.png`,
+              `${BASE_PATH}/madrasty/cloud-tasks.png`,
               `${BASE_PATH}/madrasty/dashboard.png`,
             ]}
           />
@@ -256,7 +259,7 @@ const PROJECTS: Project[] = [
     filterTag: "ai3d",
     title: "SmartMenu 4D — Interactive 3D & AR Menu",
     src: "/assets/projects-screenshots/smartmenu/landing.png",
-    screenshots: ["landing.png", "ar-view.png"],
+    screenshots: ["landing.png", "ar-view.png", "features.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.next,
@@ -309,6 +312,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/smartmenu/landing.png`,
               `${BASE_PATH}/smartmenu/ar-view.png`,
+              `${BASE_PATH}/smartmenu/features.png`,
             ]}
           />
         </div>
@@ -321,7 +325,7 @@ const PROJECTS: Project[] = [
     filterTag: "realtime",
     title: "Multiplayer Chess Engine — Real-Time WebSocket FIDE",
     src: "/assets/projects-screenshots/chess/landing.png",
-    screenshots: ["landing.png", "board.png"],
+    screenshots: ["landing.png", "board.png", "matchmaking.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.flutter,
@@ -373,6 +377,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/chess/landing.png`,
               `${BASE_PATH}/chess/board.png`,
+              `${BASE_PATH}/chess/matchmaking.png`,
             ]}
           />
         </div>
@@ -385,7 +390,7 @@ const PROJECTS: Project[] = [
     filterTag: "mobile",
     title: "Arm Wrestling Coach — Swift WidgetKit & Ad Mediation",
     src: "/assets/projects-screenshots/armwrestling/landing.png",
-    screenshots: ["landing.png", "technique.png"],
+    screenshots: ["landing.png", "technique.png", "widget.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.reactNative,
@@ -438,6 +443,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/armwrestling/landing.png`,
               `${BASE_PATH}/armwrestling/technique.png`,
+              `${BASE_PATH}/armwrestling/widget.png`,
             ]}
           />
         </div>
@@ -450,7 +456,7 @@ const PROJECTS: Project[] = [
     filterTag: "mobile",
     title: "Interactive Sky Map — Celestial AR Navigator",
     src: "/assets/projects-screenshots/skymap/landing.png",
-    screenshots: ["landing.png", "map.png"],
+    screenshots: ["landing.png", "map.png", "sensor-fusion.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.flutter,
@@ -501,6 +507,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/skymap/landing.png`,
               `${BASE_PATH}/skymap/map.png`,
+              `${BASE_PATH}/skymap/sensor-fusion.png`,
             ]}
           />
         </div>
@@ -513,7 +520,7 @@ const PROJECTS: Project[] = [
     filterTag: "realtime",
     title: "Mini-Framework — Custom Virtual DOM & Hooks",
     src: "/assets/projects-screenshots/framework/landing.png",
-    screenshots: ["landing.png", "vdom.png"],
+    screenshots: ["landing.png", "vdom.png", "hooks.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
@@ -564,6 +571,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/framework/landing.png`,
               `${BASE_PATH}/framework/vdom.png`,
+              `${BASE_PATH}/framework/hooks.png`,
             ]}
           />
         </div>
@@ -576,7 +584,7 @@ const PROJECTS: Project[] = [
     filterTag: "mobile",
     title: "2048 Mobile — Deterministic Matrix Engine",
     src: "/assets/projects-screenshots/game2048/landing.png",
-    screenshots: ["landing.png", "grid.png"],
+    screenshots: ["landing.png", "grid.png", "tests.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.flutter,
@@ -627,6 +635,7 @@ const PROJECTS: Project[] = [
             images={[
               `${BASE_PATH}/game2048/landing.png`,
               `${BASE_PATH}/game2048/grid.png`,
+              `${BASE_PATH}/game2048/tests.png`,
             ]}
           />
         </div>

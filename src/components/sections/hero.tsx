@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File, Github, Linkedin, Download } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -81,17 +81,31 @@ const HeroSection = () => {
                 </BlurIn>
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
-                <Link
-                  href={"/resume"}
-                  className="flex-1"
-                >
-                  <BoxReveal delay={2} width="100%" >
-                    <Button className="flex items-center gap-2 w-full">
-                      <File size={24} />
-                      <p>View Resume</p>
+                <div className="flex flex-col sm:flex-row items-center gap-3">
+                  <Link
+                    href={"/resume"}
+                    className="w-full sm:w-auto"
+                  >
+                    <BoxReveal delay={2} width="100%">
+                      <Button className="flex items-center gap-2 w-full sm:w-auto">
+                        <File size={18} />
+                        <p>View CV</p>
+                      </Button>
+                    </BoxReveal>
+                  </Link>
+                  <BoxReveal delay={2.1} width="100%">
+                    <Button asChild variant={"outline"} className="flex items-center gap-2 w-full sm:w-auto cursor-pointer">
+                      <a
+                        href="/api/download-cv"
+                        download="Mohammed_Jebbari_Resume.pdf"
+                        className="flex items-center gap-2"
+                      >
+                        <Download size={18} />
+                        <p>Download CV</p>
+                      </a>
                     </Button>
                   </BoxReveal>
-                </Link>
+                </div>
                 <div className="md:self-start flex gap-3">
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>

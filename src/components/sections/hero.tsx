@@ -80,64 +80,62 @@ const HeroSection = () => {
                   </p>
                 </BlurIn>
               </div>
-              <div className="mt-8 flex flex-col gap-4 w-full max-w-lg">
-                <div className="flex flex-wrap items-center gap-3">
-                  <Button asChild size="default" className="flex items-center gap-2 cursor-pointer shadow-md shadow-primary/20">
-                    <Link
-                      href={"/resume"}
-                      className="flex items-center gap-2 font-semibold"
-                    >
-                      <File size={16} />
-                      <span>View Resume / CV</span>
-                    </Link>
-                  </Button>
+              <div className="mt-8 flex flex-col gap-3 w-fit">
+                <Link
+                  href={"/resume"}
+                  className="flex-1"
+                >
+                  <BoxReveal delay={2} width="100%">
+                    <Button className="flex items-center gap-2 w-full">
+                      <File size={24} />
+                      <p>View Resume</p>
+                    </Button>
+                  </BoxReveal>
+                </Link>
+                <div className="md:self-start flex gap-3">
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
                       <Link href={"#contact"}>
                         <Button
-                          variant={"secondary"}
-                          size="default"
-                          className="cursor-pointer"
+                          variant={"outline"}
+                          className="block w-full overflow-hidden"
                         >
                           Hire Me
                         </Button>
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent side="bottom">
-                      <p>Let&apos;s build something great 🚀</p>
+                      <p>pls 🥹 🙏</p>
                     </TooltipContent>
                   </Tooltip>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Link
-                    href={config.social.twitter}
-                    target="_blank"
-                    aria-label="X (Twitter)"
-                  >
-                    <Button variant={"outline"} size="icon" className="h-9 w-9">
-                      <SiX size={18} />
-                    </Button>
-                  </Link>
-                  <Link
-                    href={config.social.github}
-                    target="_blank"
-                    className="cursor-can-hover"
-                    aria-label="GitHub"
-                  >
-                    <Button variant={"outline"} size="icon" className="h-9 w-9">
-                      <SiGithub size={18} />
-                    </Button>
-                  </Link>
-                  <Link
-                    href={config.social.linkedin}
-                    target="_blank"
-                    className="cursor-can-hover"
-                    aria-label="LinkedIn"
-                  >
-                    <Button variant={"outline"} size="icon" className="h-9 w-9">
-                      <SiLinkedin size={18} />
-                    </Button>
-                  </Link>
+                  <div className="flex items-center h-full gap-2">
+                    <Link
+                      href={config.social.twitter}
+                      target="_blank"
+                    >
+                      <Button variant={"outline"}>
+                        <SiX size={24} />
+                      </Button>
+                    </Link>
+                    <Link
+                      href={config.social.github}
+                      target="_blank"
+                      className="cursor-can-hover"
+                    >
+                      <Button variant={"outline"}>
+                        <SiGithub size={24} />
+                      </Button>
+                    </Link>
+                    <Link
+                      href={config.social.linkedin}
+                      target="_blank"
+                      className="cursor-can-hover"
+                    >
+                      <Button variant={"outline"}>
+                        <SiLinkedin size={24} />
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

@@ -257,7 +257,7 @@ const PROJECTS: Project[] = [
     id: "smartmenu-4d",
     category: "WebXR & Augmented Reality",
     filterTag: "ai3d",
-    title: "SmartMenu 4D — Interactive 3D & AR Menu",
+    title: "Piri Piri 4D — Interactive 3D & AR Menu",
     src: "/assets/projects-screenshots/smartmenu/landing.png",
     screenshots: ["landing.png", "ar-view.png", "features.png"],
     skills: {
@@ -272,13 +272,13 @@ const PROJECTS: Project[] = [
         PROJECT_SKILLS.github,
       ],
     },
-    live: "https://github.com/jebbari-mohammed/4DWebsitee",
+    live: "https://4-d-websitee.vercel.app/",
     github: "https://github.com/jebbari-mohammed/4DWebsitee",
     get content() {
       return (
         <div className="space-y-6">
           <TypographyP className="font-mono text-xl text-center text-primary">
-            Next.js 16 &amp; React 19 interactive 3D restaurant experience with mobile Augmented Reality tabletop projection via Google Scene Viewer &amp; Apple USDZ QuickLook.
+            Production interactive 3D and Augmented Reality digital menu built for Piri Piri Urban Food (Oujda). Diners can project photorealistic dishes in real scale onto their dining table before ordering.
           </TypographyP>
 
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -292,12 +292,12 @@ const PROJECTS: Project[] = [
             <div className="p-4 rounded-xl border border-border bg-card/60">
               <span className="text-xs text-muted-foreground uppercase font-mono">Mobile AR</span>
               <p className="text-lg font-bold mt-1 text-cyan-400">WebXR &amp; USDZ</p>
-              <p className="text-xs text-muted-foreground mt-1">Real-scale table plane detection on iOS &amp; Android.</p>
+              <p className="text-xs text-muted-foreground mt-1">Real-scale table plane detection on iOS QuickLook &amp; Android Scene Viewer.</p>
             </div>
             <div className="p-4 rounded-xl border border-border bg-card/60">
-              <span className="text-xs text-muted-foreground uppercase font-mono">Modern Core</span>
-              <p className="text-lg font-bold mt-1 text-purple-400">Next.js 16 &amp; React 19</p>
-              <p className="text-xs text-muted-foreground mt-1">Tailwind CSS v4 with custom TypeScript WebXR typings.</p>
+              <span className="text-xs text-muted-foreground uppercase font-mono">Commerce</span>
+              <p className="text-lg font-bold mt-1 text-emerald-400">WhatsApp Dispatch</p>
+              <p className="text-xs text-muted-foreground mt-1">Direct 1-tap ordering pipeline to restaurant staff.</p>
             </div>
           </div>
 
@@ -305,7 +305,7 @@ const PROJECTS: Project[] = [
             Physically Based Rendering &amp; Camera Projection
           </TypographyH3>
           <p className="font-mono text-sm leading-relaxed text-muted-foreground mb-4">
-            Allows diners to inspect culinary dishes in high-fidelity 3D with realistic textures, ingredient breakdowns, and accurate proportions before ordering. Built-in WebXR and USDZ bridges allow instant projection directly onto restaurant tables through smartphone cameras with zero app installation required.
+            Deployed live on Vercel with Next.js 16 App Router and React 19. Allows customers at Piri Piri Oujda to inspect culinary dishes with realistic textures, ingredient breakdowns, and accurate proportions. Built-in WebXR and USDZ bridges enable instant tabletop camera projection directly from mobile Safari and Chrome without installing any native app.
           </p>
 
           <SlideShow

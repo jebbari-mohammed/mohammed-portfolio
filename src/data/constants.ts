@@ -1,0 +1,353 @@
+export enum SkillNames {
+  FLUTTER = "flutter",
+  DART = "dart",
+  REACT_NATIVE = "reactnative",
+  EXPO = "expo",
+  TS = "ts",
+  JS = "js",
+  NODEJS = "nodejs",
+  FIREBASE = "firebase",
+  POSTGRES = "postgres",
+  DOCKER = "docker",
+  GCP = "gcp",
+  GIT = "git",
+  GITHUB = "github",
+  RUST = "rust",
+  GO = "go",
+  HTML = "html",
+  CSS = "css",
+  REACT = "react",
+  NEXTJS = "nextjs",
+  TAILWIND = "tailwind",
+  LINUX = "linux",
+  NGINX = "nginx",
+  VERCEL = "vercel",
+}
+
+export type Skill = {
+  id: number;
+  name: string;
+  label: string;
+  shortDescription: string;
+  color: string;
+  icon: string;
+};
+
+export const SKILLS: Record<SkillNames, Skill> = {
+  [SkillNames.FLUTTER]: {
+    id: 1,
+    name: "flutter",
+    label: "Flutter",
+    shortDescription: "Beautiful multiplatform native UIs at 60+ FPS! 💙📱",
+    color: "#02569B",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+  },
+  [SkillNames.DART]: {
+    id: 2,
+    name: "dart",
+    label: "Dart",
+    shortDescription: "Client-optimized language for fast apps on any platform 🎯⚡",
+    color: "#0175C2",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+  },
+  [SkillNames.REACT_NATIVE]: {
+    id: 3,
+    name: "reactnative",
+    label: "React Native",
+    shortDescription: "Native iOS & Android components powered by React ⚛️📲",
+    color: "#61dafb",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  [SkillNames.EXPO]: {
+    id: 4,
+    name: "expo",
+    label: "Expo",
+    shortDescription: "Universal React framework for seamless mobile workflows 🚀✨",
+    color: "#000020",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  [SkillNames.TS]: {
+    id: 5,
+    name: "ts",
+    label: "TypeScript",
+    shortDescription: "Type safety, robust abstractions, zero runtime surprises 🛡️🔒",
+    color: "#007acc",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  [SkillNames.JS]: {
+    id: 6,
+    name: "js",
+    label: "JavaScript",
+    shortDescription: "Dynamic, asynchronous, powers modern web & mobile engines ⚡🌐",
+    color: "#f0db4f",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  [SkillNames.NODEJS]: {
+    id: 7,
+    name: "nodejs",
+    label: "Node.js",
+    shortDescription: "High-throughput asynchronous backend runtimes 🔙🚀",
+    color: "#6cc24a",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  [SkillNames.FIREBASE]: {
+    id: 8,
+    name: "firebase",
+    label: "Firebase",
+    shortDescription: "Serverless Auth, Cloud Functions, and Real-Time Firestore 🔥☁️",
+    color: "#ffca28",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+  [SkillNames.POSTGRES]: {
+    id: 9,
+    name: "postgres",
+    label: "PostgreSQL",
+    shortDescription: "The world's most advanced relational database engine 🐘📊",
+    color: "#336791",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  [SkillNames.DOCKER]: {
+    id: 10,
+    name: "docker",
+    label: "Docker",
+    shortDescription: "Reproducible containerized environments & microservices 🐳📦",
+    color: "#2496ed",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  [SkillNames.GCP]: {
+    id: 11,
+    name: "gcp",
+    label: "Google Cloud",
+    shortDescription: "Scalable cloud infrastructure, Cloud Functions, and IAM ☁️🛡️",
+    color: "#4285f4",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+  },
+  [SkillNames.GIT]: {
+    id: 12,
+    name: "git",
+    label: "Git",
+    shortDescription: "Branching, rebasing, and distributed version control 🕵️‍♂️🔄",
+    color: "#f1502f",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  [SkillNames.GITHUB]: {
+    id: 13,
+    name: "github",
+    label: "GitHub",
+    shortDescription: "Open-source collaboration, CI/CD Actions, and release pipelines 🐙✨",
+    color: "#000000",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+  [SkillNames.RUST]: {
+    id: 14,
+    name: "rust",
+    label: "Rust",
+    shortDescription: "Memory safety without garbage collection & blazing speed 🦀⚙️",
+    color: "#dea584",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+  },
+  [SkillNames.GO]: {
+    id: 15,
+    name: "go",
+    label: "Go",
+    shortDescription: "Goroutines, lightweight channels, high concurrency microservices 🐹💨",
+    color: "#00add8",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+  },
+  [SkillNames.HTML]: {
+    id: 16,
+    name: "html",
+    label: "HTML5",
+    shortDescription: "Semantic markup and modern responsive layouts 🌐📄",
+    color: "#e34c26",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  [SkillNames.CSS]: {
+    id: 17,
+    name: "css",
+    label: "CSS3",
+    shortDescription: "Animations, keyframes, grid systems, and glassmorphism 💁‍♂️🔥",
+    color: "#563d7c",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  [SkillNames.REACT]: {
+    id: 18,
+    name: "react",
+    label: "React",
+    shortDescription: "Declarative component-driven UI architecture ⚛️✨",
+    color: "#61dafb",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  [SkillNames.NEXTJS]: {
+    id: 19,
+    name: "nextjs",
+    label: "Next.js",
+    shortDescription: "React Framework with SSR, Server Actions, and App Router 👑📜",
+    color: "#fff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  [SkillNames.TAILWIND]: {
+    id: 20,
+    name: "tailwind",
+    label: "Tailwind CSS",
+    shortDescription: "Utility-first CSS framework for rapid modern UI development 🌪️🔥",
+    color: "#38bdf8",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  [SkillNames.LINUX]: {
+    id: 21,
+    name: "linux",
+    label: "Linux",
+    shortDescription: "POSIX shell mastery, server configuration, and automation 🐧💻",
+    color: "#fff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  },
+  [SkillNames.NGINX]: {
+    id: 22,
+    name: "nginx",
+    label: "Nginx",
+    shortDescription: "Reverse proxy, SSL termination, and static asset acceleration 🚗💨",
+    color: "#008000",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+  },
+  [SkillNames.VERCEL]: {
+    id: 23,
+    name: "vercel",
+    label: "Vercel",
+    shortDescription: "Serverless edge deployments & CI/CD workflow automation 🚀🌿",
+    color: "#6cc24a",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+  },
+};
+
+export type Experience = {
+  id: number;
+  startDate: string;
+  endDate: string;
+  title: string;
+  company: string;
+  description: string[];
+  skills: SkillNames[];
+};
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: 1,
+    startDate: "2022",
+    endDate: "Present",
+    title: "Mobile Developer & AI Engineer",
+    company: "Independent Mobile Projects",
+    description: [
+      "Engineered IZEM, an autonomous AI mobile fitness coach using React Native, Expo, TypeScript, and Firebase.",
+      "Implemented real-time voice AI with live audio streaming, WebSockets, barge-in handling, and native iOS CallKit & PushKit.",
+      "Developed Interactive Sky Map in Flutter using device sensor fusion (GPS, Accelerometer, Magnetometer) rendering at 10+ fps.",
+      "Engineered cross-platform 2048 game and responsive mobile architectures with 60fps animations.",
+    ],
+    skills: [
+      SkillNames.REACT_NATIVE,
+      SkillNames.FLUTTER,
+      SkillNames.EXPO,
+      SkillNames.TS,
+      SkillNames.DART,
+      SkillNames.FIREBASE,
+      SkillNames.GCP,
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 2,
+    startDate: "2023",
+    endDate: "Present",
+    title: "Independent Security Researcher",
+    company: "Responsible Vulnerability Disclosure",
+    description: [
+      "Identified and responsibly disclosed critical backend/database misconfigurations safeguarding 1,000,000+ sensitive user records.",
+      "Audited mobile authentication tokens, user metrics, health & fitness preferences, and real-time endpoints.",
+      "Helped development teams reinforce Firebase security rules and API access layers.",
+    ],
+    skills: [
+      SkillNames.FIREBASE,
+      SkillNames.POSTGRES,
+      SkillNames.NODEJS,
+      SkillNames.LINUX,
+      SkillNames.GCP,
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 3,
+    startDate: "2019",
+    endDate: "2022",
+    title: "Independent Mobile App Publisher",
+    company: "Google Play Store",
+    description: [
+      "Published and managed multiple mobile applications and games on Google Play, from product preparation through production release.",
+      "Gained hands-on experience with the complete mobile application publishing lifecycle, including Play Store listings, visual assets, releases, updates, and performance monitoring.",
+      "Monetized multiple applications, gaining early experience generating revenue from digital products.",
+      "Analyzed downloads and user behavior and optimized Google Play Store listings to improve application visibility.",
+      "Developed practical knowledge of app store policies, intellectual property requirements, and publishing standards.",
+    ],
+    skills: [
+      SkillNames.FLUTTER,
+      SkillNames.DART,
+      SkillNames.JS,
+      SkillNames.FIREBASE,
+      SkillNames.GIT,
+      SkillNames.GITHUB,
+    ],
+  },
+  {
+    id: 4,
+    startDate: "2023",
+    endDate: "2025",
+    title: "Software Engineering Fellow",
+    company: "Zone01 Oujda / 01Talent Maroc",
+    description: [
+      "Completed an intensive software engineering program tackling 300+ algorithmic and systems programming challenges.",
+      "Built full-stack microservices, CLI utilities, and web apps using Go, Rust, JavaScript, TypeScript, and Docker.",
+      "Mastered low-level concurrency, memory safety, data structures, and peer-to-peer code reviews.",
+    ],
+    skills: [
+      SkillNames.GO,
+      SkillNames.RUST,
+      SkillNames.TS,
+      SkillNames.JS,
+      SkillNames.DOCKER,
+      SkillNames.LINUX,
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 5,
+    startDate: "Sep 2018",
+    endDate: "Sep 2021",
+    title: "Mechatronics Engineering Technician",
+    company: "CFMNTIOE, Oujda",
+    description: [
+      "Earned Specialized Technician Diploma in Mechatronics with strong foundation in embedded systems and microcontrollers.",
+      "Applied hardware-software interfacing, logic architecture, and algorithmic control principles to software development.",
+    ],
+    skills: [
+      SkillNames.LINUX,
+      SkillNames.GIT,
+      SkillNames.JS,
+    ],
+  },
+];
+
+export const themeDisclaimers = {
+  light: [
+    "Warning: Light mode emits a gazillion lumens of pure radiance!",
+    "Caution: Light mode ahead! Please don't try this at home.",
+    "Only trained professionals can handle this much brightness. Proceed with sunglasses!",
+    "Brace yourself! Light mode is about to make everything shine brighter than your future.",
+    "Flipping the switch to light mode... Are you sure your eyes are ready for this?",
+  ],
+  dark: [
+    "Light mode? I thought you went insane... but welcome back to the dark side!",
+    "Switching to dark mode... How was life on the bright side?",
+    "Dark mode activated! Thanks you from the bottom of my heart, and my eyes too.",
+    "Welcome back to the shadows. How was life out there in the light?",
+    "Dark mode on! Finally, someone who understands true sophistication.",
+  ],
+};

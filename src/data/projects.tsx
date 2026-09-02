@@ -34,12 +34,12 @@ const ProjectsLinks = ({ live, repo }: { live?: string; repo?: string }) => {
         <Link
           className="font-mono underline flex gap-2"
           rel="noopener"
-          target="_new"
+          target="_blank"
           href={live}
         >
           <Button variant={"default"} size={"sm"}>
             Live Demo / Store
-            <ArrowUpRight className="ml-3 w-5 h-5" />
+            <ArrowUpRight className="ml-2 w-4 h-4" />
           </Button>
         </Link>
       )}
@@ -47,12 +47,12 @@ const ProjectsLinks = ({ live, repo }: { live?: string; repo?: string }) => {
         <Link
           className="font-mono underline flex gap-2"
           rel="noopener"
-          target="_new"
+          target="_blank"
           href={repo}
         >
-          <Button variant={"default"} size={"sm"}>
+          <Button variant={"outline"} size={"sm"}>
             GitHub Repository
-            <ArrowUpRight className="ml-3 w-5 h-5" />
+            <ArrowUpRight className="ml-2 w-4 h-4" />
           </Button>
         </Link>
       )}
@@ -75,26 +75,26 @@ const brand = (title: string, file: string): Skill => ({
 });
 
 export const PROJECT_SKILLS = {
-  reactNative: brand("React Native", "react.svg"),
-  expo: brand("Expo", "react.svg"),
-  flutter: brand("Flutter", "flutter.svg"),
-  dart: brand("Dart", "dart.svg"),
-  ts: brand("TypeScript", "typescript.svg"),
-  js: brand("JavaScript", "javascript.svg"),
-  firebase: brand("Firebase", "firebase.svg"),
-  gemini: brand("Gemini AI", "gemini.svg"),
-  voiceAi: brand("Real-Time Voice AI", "openai.svg"),
-  websockets: brand("WebSockets", "socketio.svg"),
-  callkit: brand("iOS CallKit & PushKit", "apple.svg"),
-  healthkit: brand("Apple HealthKit", "apple.svg"),
-  swift: brand("Swift & WidgetKit", "apple.svg"),
-  revenueCat: brand("RevenueCat IAP", "apple.svg"),
-  postgres: brand("PostgreSQL", "postgresql.svg"),
-  docker: brand("Docker", "docker.svg"),
-  gcp: brand("Google Cloud", "gcp.svg"),
-  git: brand("Git", "git.svg"),
-  github: brand("GitHub", "github.svg"),
-  go: brand("Go", "go.svg"),
+  reactNative: brand("React Native", "react-mono.svg"),
+  expo: brand("Expo", "react-mono.svg"),
+  flutter: brand("Flutter", "flutter-mono.svg"),
+  dart: brand("Dart", "dart-mono.svg"),
+  ts: brand("TypeScript", "typescript-mono.svg"),
+  js: brand("JavaScript", "javascript-mono.svg"),
+  firebase: brand("Firebase", "firebase-mono.svg"),
+  gemini: brand("Gemini AI", "gemini-mono.svg"),
+  voiceAi: brand("Real-Time Voice AI", "gemini-mono.svg"),
+  websockets: brand("WebSockets", "websockets-mono.svg"),
+  callkit: brand("iOS CallKit & PushKit", "apple-mono.svg"),
+  healthkit: brand("Apple HealthKit", "apple-mono.svg"),
+  swift: brand("Swift & WidgetKit", "apple-mono.svg"),
+  revenueCat: brand("RevenueCat IAP", "apple-mono.svg"),
+  postgres: brand("PostgreSQL", "postgresql-mono.svg"),
+  docker: brand("Docker", "docker-mono.svg"),
+  gcp: brand("Google Cloud", "googlecloud-mono.svg"),
+  git: brand("Git", "git-mono.svg"),
+  github: brand("GitHub", "github-mono.svg"),
+  go: brand("Go", "go-mono.svg"),
   rust: brand("Rust", "rust-mono.svg"),
   tailwind: brand("Tailwind CSS", "tailwind-css-mono.svg"),
   next: brand("Next.js", "nextdotjs-mono.svg"),
@@ -137,7 +137,7 @@ const PROJECTS: Project[] = [
       ],
     },
     live: "https://youraicoach.life/",
-    github: "https://github.com/jebbari-mohammed",
+    github: "https://github.com/jebbari-mohammed/AI-Gym-Coach",
     get content() {
       return (
         <div className="space-y-6">
@@ -204,8 +204,8 @@ const PROJECTS: Project[] = [
         PROJECT_SKILLS.postgres,
       ],
     },
-    live: "https://github.com/jebbari-mohammed",
-    github: "https://github.com/jebbari-mohammed",
+    live: "https://github.com/jebbari-mohammed/madrasty",
+    github: "https://github.com/jebbari-mohammed/madrasty",
     get content() {
       return (
         <div className="space-y-6">
@@ -269,8 +269,8 @@ const PROJECTS: Project[] = [
         PROJECT_SKILLS.github,
       ],
     },
-    live: "https://github.com/jebbari-mohammed",
-    github: "https://github.com/jebbari-mohammed",
+    live: "https://github.com/jebbari-mohammed/4DWebsitee",
+    github: "https://github.com/jebbari-mohammed/4DWebsitee",
     get content() {
       return (
         <div className="space-y-6">
@@ -333,8 +333,8 @@ const PROJECTS: Project[] = [
         PROJECT_SKILLS.docker,
       ],
     },
-    live: "https://github.com/jebbari-mohammed",
-    github: "https://github.com/jebbari-mohammed",
+    live: "https://github.com/jebbari-mohammed/chess",
+    github: "https://github.com/jebbari-mohammed/chess",
     get content() {
       return (
         <div className="space-y-6">
@@ -398,8 +398,8 @@ const PROJECTS: Project[] = [
         PROJECT_SKILLS.ts,
       ],
     },
-    live: "https://github.com/jebbari-mohammed",
-    github: "https://github.com/jebbari-mohammed",
+    live: "https://github.com/jebbari-mohammed/arm-wrestling-app",
+    github: "https://github.com/jebbari-mohammed/arm-wrestling-app",
     get content() {
       return (
         <div className="space-y-6">
@@ -458,10 +458,11 @@ const PROJECTS: Project[] = [
       ],
       backend: [
         PROJECT_SKILLS.git,
+        PROJECT_SKILLS.github,
       ],
     },
-    live: "https://github.com/jebbari-mohammed",
-    github: "https://github.com/jebbari-mohammed",
+    live: "https://github.com/jebbari-mohammed/sky-map",
+    github: "https://github.com/jebbari-mohammed/sky-map",
     get content() {
       return (
         <div className="space-y-6">
@@ -520,6 +521,7 @@ const PROJECTS: Project[] = [
       ],
       backend: [
         PROJECT_SKILLS.git,
+        PROJECT_SKILLS.github,
       ],
     },
     live: "https://github.com/jebbari-mohammed/mini-framework",
@@ -582,6 +584,7 @@ const PROJECTS: Project[] = [
       ],
       backend: [
         PROJECT_SKILLS.git,
+        PROJECT_SKILLS.github,
       ],
     },
     live: "https://github.com/jebbari-mohammed/twenty-forty-eight",

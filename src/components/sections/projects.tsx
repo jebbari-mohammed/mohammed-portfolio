@@ -9,6 +9,7 @@ import { FloatingDock } from "../ui/floating-dock";
 import { ScrollArea } from "../ui/scroll-area";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles, Smartphone, Cpu, Box } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import { AnimatePresence, motion } from "motion/react";
 
 import projects, { Project } from "@/data/projects";
@@ -107,16 +108,40 @@ const ProjectCard = ({ project }: { project: Project }) => {
             {/* Glowing Accent Ring */}
             <div className="absolute inset-0 rounded-xl border border-white/5 group-hover:border-indigo-500/30 transition-colors pointer-events-none z-10" />
 
+            {/* Direct GitHub Link on Card */}
+            {project.github && project.github !== "#" && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="absolute top-3 right-3 z-20 flex items-center gap-1.5 bg-black/75 hover:bg-black text-white/90 hover:text-white text-[11px] font-mono border border-white/15 hover:border-indigo-500/60 backdrop-blur-md px-2.5 py-1 rounded-full shadow-lg transition-all hover:scale-105 pointer-events-auto"
+                title="Open GitHub Repository"
+              >
+                <SiGithub className="w-3.5 h-3.5 text-white" />
+                <span>GitHub</span>
+                <ArrowUpRight className="w-3 h-3 text-muted-foreground" />
+              </a>
+            )}
+
             {/* Bottom Gradient Metadata */}
-            <div className="absolute w-full h-28 bottom-0 left-0 bg-gradient-to-t from-background via-background/90 to-transparent pointer-events-none z-10">
+            <div className="absolute w-full h-32 bottom-0 left-0 bg-gradient-to-t from-background via-background/90 to-transparent pointer-events-none z-10">
               <div className="flex flex-col h-full items-start justify-end p-5">
                 <div className="text-base md:text-lg font-semibold text-left text-foreground tracking-tight line-clamp-1 group-hover:text-primary transition-colors [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
                   {project.title}
                 </div>
-                <div className="flex items-center gap-2 mt-1.5">
+                <div className="flex flex-wrap items-center gap-1.5 mt-2">
                   <span className="text-[10px] font-mono uppercase tracking-wider bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-md px-2 py-0.5">
                     {project.category}
                   </span>
+                  {[...project.skills.frontend, ...project.skills.backend].slice(0, 3).map((s) => (
+                    <span
+                      key={s.title}
+                      className="text-[10px] font-mono text-muted-foreground bg-white/5 border border-white/10 rounded px-1.5 py-0.5"
+                    >
+                      {s.title}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -140,9 +165,10 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   <Link
                     href={project.github}
                     target="_blank"
-                    className="text-xs font-mono text-muted-foreground hover:text-foreground transition-colors border border-border px-3 py-1.5 rounded-full hover:bg-secondary/60"
+                    className="flex items-center gap-2 text-xs font-mono text-foreground hover:text-white transition-colors border border-border px-3.5 py-1.5 rounded-full bg-secondary/40 hover:bg-secondary/80"
                   >
-                    Source Code
+                    <SiGithub className="w-3.5 h-3.5" />
+                    GitHub Repo
                   </Link>
                 )}
                 {project.live && project.live !== "#" && (

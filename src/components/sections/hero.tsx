@@ -80,76 +80,74 @@ const HeroSection = () => {
                   </p>
                 </BlurIn>
               </div>
-              <div className="mt-8 flex flex-col gap-3 w-fit">
-                <div className="flex flex-col sm:flex-row items-center gap-3">
-                  <Link
-                    href={"/resume"}
-                    className="w-full sm:w-auto"
-                  >
-                    <BoxReveal delay={2} width="100%">
-                      <Button className="flex items-center gap-2 w-full sm:w-auto">
-                        <File size={18} />
-                        <p>View CV</p>
-                      </Button>
-                    </BoxReveal>
-                  </Link>
-                  <BoxReveal delay={2.1} width="100%">
-                    <Button asChild variant={"outline"} className="flex items-center gap-2 w-full sm:w-auto cursor-pointer">
-                      <a
-                        href="/api/download-cv"
-                        download="Mohammed_Jebbari_Resume.pdf"
-                        className="flex items-center gap-2"
-                      >
-                        <Download size={18} />
-                        <p>Download CV</p>
-                      </a>
-                    </Button>
-                  </BoxReveal>
-                </div>
-                <div className="md:self-start flex gap-3">
+              <div className="mt-8 flex flex-col gap-4 w-full max-w-lg">
+                <div className="flex flex-wrap items-center gap-3">
+                  <Button asChild size="default" className="flex items-center gap-2 cursor-pointer shadow-md shadow-primary/20">
+                    <a
+                      href="/api/download-cv"
+                      download="Mohammed_Jebbari_Resume.pdf"
+                      className="flex items-center gap-2 font-semibold"
+                    >
+                      <Download size={16} />
+                      <span>Download CV</span>
+                    </a>
+                  </Button>
+                  <Button asChild variant={"outline"} size="default" className="cursor-pointer">
+                    <Link
+                      href={"/resume"}
+                      className="flex items-center gap-2"
+                    >
+                      <File size={16} />
+                      <span>View CV</span>
+                    </Link>
+                  </Button>
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
                       <Link href={"#contact"}>
                         <Button
-                          variant={"outline"}
-                          className="block w-full overflow-hidden"
+                          variant={"secondary"}
+                          size="default"
+                          className="cursor-pointer"
                         >
                           Hire Me
                         </Button>
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
+                      <p>Let&apos;s build something great 🚀</p>
                     </TooltipContent>
                   </Tooltip>
-                  <div className="flex items-center h-full gap-2">
-                    <Link
-                      href={config.social.twitter}
-                      target="_blank"
-                    >
-                      <Button variant={"outline"}>
-                        <SiX size={24} />
-                      </Button>
-                    </Link>
-                    <Link
-                      href={config.social.github}
-                      target="_blank"
-                      className="cursor-can-hover"
-                    >
-                      <Button variant={"outline"}>
-                        <SiGithub size={24} />
-                      </Button>
-                    </Link>
-                    <Link
-                      href={config.social.linkedin}
-                      target="_blank"
-                      className="cursor-can-hover"
-                    >
-                      <Button variant={"outline"}>
-                        <SiLinkedin size={24} />
-                      </Button>
-                    </Link>
-                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href={config.social.twitter}
+                    target="_blank"
+                    aria-label="X (Twitter)"
+                  >
+                    <Button variant={"outline"} size="icon" className="h-9 w-9">
+                      <SiX size={18} />
+                    </Button>
+                  </Link>
+                  <Link
+                    href={config.social.github}
+                    target="_blank"
+                    className="cursor-can-hover"
+                    aria-label="GitHub"
+                  >
+                    <Button variant={"outline"} size="icon" className="h-9 w-9">
+                      <SiGithub size={18} />
+                    </Button>
+                  </Link>
+                  <Link
+                    href={config.social.linkedin}
+                    target="_blank"
+                    className="cursor-can-hover"
+                    aria-label="LinkedIn"
+                  >
+                    <Button variant={"outline"} size="icon" className="h-9 w-9">
+                      <SiLinkedin size={18} />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

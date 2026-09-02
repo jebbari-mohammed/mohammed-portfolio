@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin, Download } from "lucide-react";
+import { File, Github, Linkedin } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -83,22 +83,12 @@ const HeroSection = () => {
               <div className="mt-8 flex flex-col gap-4 w-full max-w-lg">
                 <div className="flex flex-wrap items-center gap-3">
                   <Button asChild size="default" className="flex items-center gap-2 cursor-pointer shadow-md shadow-primary/20">
-                    <a
-                      href="/api/download-cv"
-                      download="Mohammed_Jebbari_Resume.pdf"
-                      className="flex items-center gap-2 font-semibold"
-                    >
-                      <Download size={16} />
-                      <span>Download CV</span>
-                    </a>
-                  </Button>
-                  <Button asChild variant={"outline"} size="default" className="cursor-pointer">
                     <Link
                       href={"/resume"}
-                      className="flex items-center gap-2"
+                      className="flex items-center gap-2 font-semibold"
                     >
                       <File size={16} />
-                      <span>View CV</span>
+                      <span>View Resume / CV</span>
                     </Link>
                   </Button>
                   <Tooltip delayDuration={300}>

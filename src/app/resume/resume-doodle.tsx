@@ -14,11 +14,9 @@ const COLORS = [
 ];
 
 export default function ResumeDoodle({
-  src,
-  title,
+  children,
 }: {
-  src: string;
-  title: string;
+  children: React.ReactNode;
 }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -30,7 +28,7 @@ export default function ResumeDoodle({
   const [hasDrawing, setHasDrawing] = useState(false);
   const [wiped, setWiped] = useState(false);
 
-  // Keep the canvas sized to the viewer (clears on resize — rare, fine for a doodle).
+  // Keep the canvas sized to the viewer
   useEffect(() => {
     const canvas = canvasRef.current;
     const wrap = wrapRef.current;
@@ -67,7 +65,6 @@ export default function ResumeDoodle({
     e.currentTarget.setPointerCapture(e.pointerId);
     drawing.current = true;
     last.current = posFromEvent(e);
-    // a single dot, so taps leave a mark too
     const ctx = canvasRef.current?.getContext("2d");
     if (ctx && last.current) {
       ctx.fillStyle = color;
@@ -102,7 +99,6 @@ export default function ResumeDoodle({
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
-    // quick wipe animation, then clear
     setWiped(true);
     window.setTimeout(() => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -112,12 +108,8 @@ export default function ResumeDoodle({
   }, []);
 
   return (
-    <div ref={wrapRef} className="relative h-full">
-      <iframe
-        src={src}
-        title={title}
-        className="relative z-0 block h-full w-full bg-white"
-      />
+    <div ref={wrapRef} className="relative w-full">
+      {children}
 
       {/* Doodle layer */}
       <canvas
@@ -135,9 +127,8 @@ export default function ResumeDoodle({
         )}
       />
 
-      {/* Floating toolbar (viewport-fixed FAB so it never overlaps the page) */}
+      {/* Floating toolbar */}
       <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2">
-        {/* Color swatches + clear appear in doodle mode */}
         <AnimatePresence>
           {active && (
             <motion.div

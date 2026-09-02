@@ -12,7 +12,6 @@ import { Button } from "../ui/button";
 import { config } from "@/data/config";
 import OnlineUsers from "../realtime/online-users";
 import { GitHubStarsButton } from "../ui/shadcn-io/github-stars-button";
-import { Download } from "lucide-react";
 
 interface HeaderProps {
   loader?: boolean;
@@ -57,24 +56,14 @@ const Header = ({ loader }: HeaderProps) => {
           </Button>
         </Link>
 
-        <div className="flex items-center gap-2.5">
-          <a
-            href="/api/download-cv"
-            download="Mohammed_Jebbari_Resume.pdf"
-            className="flex items-center gap-1.5 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 hover:border-primary/50 text-xs font-mono font-medium px-3 py-1.5 rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_15px_rgba(99,102,241,0.2)] cursor-pointer"
-            title="Download CV (PDF)"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>Download CV</span>
-          </a>
-
+        <div className="flex items-center gap-3">
           <FunnyThemeToggle className="w-6 h-6 hidden md:flex" />
           {isHome && process.env.NEXT_PUBLIC_WS_URL && <OnlineUsers />}
           {config.githubUsername && config.githubRepo && (
             <GitHubStarsButton
               username={config.githubUsername}
               repo={config.githubRepo}
-              className="hidden sm:flex"
+              className="mr-2 hidden sm:flex"
             />
           )}
           <Button
